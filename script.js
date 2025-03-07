@@ -42,3 +42,7 @@ function getRoundResults(userOption) {
 
 console.log(getRoundResults("Rock"));
 console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
+
+function showResults(userOption) {}
+
+showResults("Rock");
