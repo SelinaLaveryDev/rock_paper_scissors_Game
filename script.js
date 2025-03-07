@@ -44,5 +44,8 @@ console.log(getRoundResults("Rock"));
 console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
 
 function showResults(userOption) {}
+playerScoreSpanElement.innerText = playerScore;
+computerScoreSpanElement.innerText = computerScore;
+roundResultsMsg.innerText = getRoundResults;
 
 showResults("Rock");
