@@ -35,17 +35,14 @@ function getRoundResults(userOption) {
   } else if (userOption === computerResult) {
     return `It's a tie! Both chose ${userOption}`;
   } else {
-    computerResult++;
+    computerScore++;
     return `Computer wins! ${computerResult} beats ${userOption}`;
   }
 }
 
-console.log(getRoundResults("Rock"));
-console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
-
-function showResults(userOption) {}
-playerScoreSpanElement.innerText = playerScore;
-computerScoreSpanElement.innerText = computerScore;
-roundResultsMsg.innerText = getRoundResults;
-
+function showResults(userOption) {
+  roundResultsMsg.innerText = getRoundResults(userOption);
+  playerScoreSpanElement.innerText = playerScore;
+  computerScoreSpanElement.innerText = computerScore;
+}
 showResults("Rock");
