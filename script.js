@@ -1,3 +1,7 @@
+const playerScoreSpanElement = document.getElementById("player-score");
+const computerScoreSpanElement = document.getElementById("computer-score");
+const roundResultsMsg = document.getElementById("results-msg");
+
 let playerScore = 0;
 let computerScore = 0;
 
