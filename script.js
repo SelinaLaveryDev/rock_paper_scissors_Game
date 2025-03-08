@@ -56,3 +56,8 @@ function showResults(userOption) {
   }
 }
 showResults("Rock");
+
+function resetGame {
+  playerScore = 0;
+  computerScore = 0;
+}
