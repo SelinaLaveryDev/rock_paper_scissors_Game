@@ -72,3 +72,15 @@ function resetGame() {
 }
 
 resetGameBtn.addEventListener("click", resetGame);
+
+rockBtn.addEventListener("click", function () {
+  showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+  showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+  showResults("Scissors");
+});
