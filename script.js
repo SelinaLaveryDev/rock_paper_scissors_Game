@@ -4,6 +4,9 @@ const roundResultsMsg = document.getElementById("results-msg");
 const winnerMsgElement = document.getElementById("winner-msg");
 const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
 
 let playerScore = 0;
 let computerScore = 0;
