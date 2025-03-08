@@ -62,4 +62,5 @@ function resetGame() {
   computerScore = 0;
   computerScoreSpanElement.innerText = computerScore;
   playerScoreSpanElement.innerText = playerScore;
+  resetGameBtn.style.display = "none";
 }
