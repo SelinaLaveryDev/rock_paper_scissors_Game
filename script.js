@@ -13,7 +13,6 @@ function getRandomComputerResult() {
   randomOption = Math.floor(Math.random() * options.length);
   return options[randomOption];
 }
-console.log(getRandomComputerResult());
 
 function hasPlayerWonTheRound(player, computer) {
   if (player === "Rock" && computer === "Scissors") {
@@ -26,8 +25,6 @@ function hasPlayerWonTheRound(player, computer) {
     return false;
   }
 }
-console.log(hasPlayerWonTheRound("Rock", "Scissors"));
-console.log(hasPlayerWonTheRound("Scissors", "Rock"));
 
 function getRoundResults(userOption) {
   const computerResult = getRandomComputerResult();
@@ -47,5 +44,15 @@ function showResults(userOption) {
   roundResultsMsg.innerText = getRoundResults(userOption);
   playerScoreSpanElement.innerText = playerScore;
   computerScoreSpanElement.innerText = computerScore;
+
+  if (playerScore === 3) {
+    winnerMsgElement.innerText = "Player has won the game!";
+    optionsContainer.style.display = "none";
+    resetGameBtn.style.display = "block";
+  } else if (computerScore === 3) {
+    winnerMsgElement.innerText = "Computer has won the game!";
+    optionsContainer.style.display = "none";
+    resetGameBtn.style.display = "block";
+  }
 }
 showResults("Rock");
