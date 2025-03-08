@@ -57,7 +57,9 @@ function showResults(userOption) {
 }
 showResults("Rock");
 
-function resetGame {
+function resetGame() {
   playerScore = 0;
   computerScore = 0;
+  computerScoreSpanElement.innerText = computerScore;
+  playerScoreSpanElement.innerText = playerScore;
 }
