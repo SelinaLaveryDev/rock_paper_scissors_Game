@@ -67,3 +67,5 @@ function resetGame() {
   winnerMsgElement.innerText = "";
   roundResultsMsg.innerText = "";
 }
+
+resetGameBtn.addEventListener("click", resetGame);
